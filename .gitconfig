@@ -1,0 +1,38 @@
+[user]
+    name = Penek Suksuda
+    email = admin@peneksuksuda.com
+    signingkey = admin@peneksuksuda.com
+
+[core]
+    editor = vim
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    default = simple
+
+[fetch]
+    prune = true
+
+[rerere]
+    enabled = true
+
+[commit]
+    gpgsign = true
+
+[tag]
+    gpgsign = true
+
+[gpg]
+    program = "C:/Program Files (x86)/GnuPG/bin/gpg.exe"
+
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    diff = auto
+
