@@ -27,9 +27,6 @@
 [tag]
     gpgsign = true
 
-[gpg]
-    program = "C:/Program Files (x86)/GnuPG/bin/gpg.exe"
-
 [color]
     status = auto
     branch = auto
