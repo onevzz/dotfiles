@@ -43,5 +43,5 @@ c() {
 }
 cc() { cd "$@" && c; }
 git0() { git reset --hard && git clean -fdx && clear && git status && la; }
-gitt() { git add -A && git commit -m "$@" && git push; }
+gitt() { git add -A && git commit -m "$@"; }
 
