@@ -34,14 +34,14 @@ alias wasd="clear && echo '---------- UPDATE --------------------------------' &
 alias ttyreconfigure="sudo dpkg-reconfigure console-setup"
 
 # Functions
-c() {
+f() {
     if [ -d .git ]; then
         clear && git status && la;
     else
         clear && la;
     fi;
 }
-cc() { cd "$@" && c; }
+ff() { cd "$@" && c; }
 git0() { git reset --hard && git clean -fdx && clear && git status && la; }
 gitt() { git add -A && git commit -m "$@"; }
 
