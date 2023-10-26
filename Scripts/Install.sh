@@ -27,8 +27,8 @@ sudo apt install xterm kitty bat fzf htop btop vim neovim when taskwarrior nnn n
 sudo apt install feh sxiv imagemagick graphicsmagick mpd mpc ncmpcpp mpv vlc vlc-plugin-pipewire ffmpeg obs-studio
 # Production Packages
 sudo apt install gimp inkscape krita kdenlive
-# Browser Packages
-sudo apt install chromium chromium-common
+# Browser Packages (Slippery Slope)
+# sudo apt install firefox chromium
 # Miscellaneous Packages
 sudo apt install keepassxc transmission-cli transmission-common transmission-daemon youtube-dl yt-dlp
 # Virtualization Packages
