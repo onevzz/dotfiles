@@ -8,7 +8,8 @@ sudo apt install fonts-noto fonts-noto-mono fonts-noto-core fonts-noto-extra fon
 sudo apt install fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji ttf-mscorefonts-installer
 # Fonts-Nerd (Reference)
 # git clone --depth 1 https://github.com/ryanoasis/nerd-fonts $HOME/NERDFONTS
-# sh $HOME/NERDFONTS/install.sh
+# cd $HOME/NERDFONTS
+# ./install.sh
 # Themes
 sudo apt install breeze breeze-gtk-theme
 # Audio Drivers
