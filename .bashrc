@@ -2,8 +2,8 @@
 #neofetch
 
 # Exports
-export PS1="\e[1;33m[\u@\h \W]\$ \e[0m"
-export PS2="\e[1;33m>> \e[0m"
+export PS1="\[$(tput bold)$(tput setaf 9)\][\[$(tput setaf 11)\]\u\[$(tput setaf 10)\]@\[$(tput setaf 12)\]\h\[$(tput setaf 13)\] \W\[$(tput setaf 9)\]]\[$(tput setaf 15)\]\$\[$(tput sgr0)\] "
+export PS2="\[$(tput bold)$(tput setaf 11)\]>>\[$(tput sgr0)\] "
 export GPG_TTY="$(tty)"
 export HISTSIZE=2000
 export HISTFILESIZE=2000
