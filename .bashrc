@@ -42,7 +42,7 @@ f() {
         clear && la;
     fi;
 }
-ff() { cd "$@" && c; }
+ff() { cd "$@" && f; }
 git0() { git reset --hard && git clean -fdx && clear && git status && la; }
 gitt() { git add -A && git commit -m "$@"; }
 
