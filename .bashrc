@@ -47,4 +47,5 @@ ff() { cd "$@" && f; }
 git0() { git reset --hard && git clean -fdx && clear && git status && la; }
 gitt() { git add -A && git commit -m "$@"; }
 gitc() { git commit -m "$@"; }
+gitx() { git commit; }
 
