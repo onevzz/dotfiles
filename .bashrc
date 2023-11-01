@@ -13,6 +13,10 @@ shopt -s checkwinsize
 
 # Aliases
 alias v="vim"
+alias c="cls"
+alias f="cls"
+alias cc="cld"
+alias ff="cld"
 alias ..="cd .."
 alias mv="mv -vi"
 alias rm="rm -vi"
@@ -36,15 +40,15 @@ alias wasd="clear && echo '---------- UPDATE --------------------------------' &
 alias ttyreconfigure="sudo dpkg-reconfigure console-setup"
 
 # Functions
-f() {
-    if [ -d .git ]; then
-        clear && git status && la;
+cls() {
+    if [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then
+        clear && git status && ls;
     else
-        clear && la;
+        clear && ls;
     fi;
 }
-ff() { cd "$@" && f; }
-git0() { git reset --hard && git clean -fdx && clear && git status && la; }
+cld() { cd "$@" && cls; }
+git0() { git reset --hard && git clean -fdx && clear && git status && ls; }
 gitt() { git add -A && git commit -m "$@"; }
 gitc() { git commit -m "$@"; }
 gitx() { git commit; }
