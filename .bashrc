@@ -1,5 +1,5 @@
 [[ $- != *i* ]] && return
-#neofetch
+neofetch
 
 # Exports
 export PS1="\[$(tput bold)$(tput setaf 9)\][\[$(tput setaf 11)\]\u\[$(tput setaf 10)\]@\[$(tput setaf 12)\]\h\[$(tput setaf 13)\] \W\[$(tput setaf 9)\]]\[$(tput setaf 15)\]\$\[$(tput sgr0)\] "
