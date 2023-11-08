@@ -1,4 +1,5 @@
 #!/bin/sh
+# TROUBLESHOOTING DUNST MISSING DISPLAY VARIABLE
 systemctl status --user dunst
 systemctl disable --user dunst
 systemctl edit --user --full dunst
