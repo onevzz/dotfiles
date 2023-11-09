@@ -1,6 +1,10 @@
 #!/bin/sh
 # Alacritty Dependencies
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+# DoomEmacs Dependencies
+sudo apt install emacs git ripgrep fd-find
+# Symlink fd (Reference)
+# ln -s $(which fdfind) $HOME/.local/bin/fd
 # Toolchains
 sudo apt install gcc r-base rust-all ruby-full python3 python3-pip golang hugo nodejs npm php sqlite3 redis-server mariadb-server
 # Fonts
