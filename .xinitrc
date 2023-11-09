@@ -34,6 +34,7 @@ flameshot &
 xset s off &
 xset -dpms &
 nitrogen --restore &
+/usr/bin/emacs --daemon &
 setxkbmap -layout us,th -option grp:alt_shift_toggle &
 exec i3
 
