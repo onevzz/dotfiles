@@ -4,7 +4,7 @@
 export GPG_TTY="$(tty)"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$GEM_HOME/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.config/emacs/bin:$HOME/.cargo/bin:$GEM_HOME/bin"
 export EDITOR="vim"
 export VISUAL="vim"
 export CODEEDITOR="vim"
