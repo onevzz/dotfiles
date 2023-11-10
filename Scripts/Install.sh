@@ -6,7 +6,7 @@ sudo apt install emacs git ripgrep fd-find
 # Symlink fd (Reference)
 # ln -s $(which fdfind) $HOME/.local/bin/fd
 # Toolchains
-sudo apt install gcc r-base rust-all ruby-full python3 python3-pip golang hugo nodejs npm php sqlite3 redis-server mariadb-server
+sudo apt install gcc r-base rust-all ruby-full python3-full python3-pip golang hugo nodejs npm php sqlite3 redis-server mariadb-server
 # Fonts
 sudo apt install fonts-noto fonts-noto-mono fonts-noto-core fonts-noto-extra fonts-noto-ui-core fonts-noto-ui-extra
 sudo apt install fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji ttf-mscorefonts-installer
