@@ -36,7 +36,7 @@ alias purgehst="rm -vf $HOME/.bash_history && history -c && clear"
 alias startnet="sudo systemctl start NetworkManager.service && echo 'Finishing the operation.....' && sleep 5s"
 alias restartnet="sudo systemctl restart NetworkManager.service && echo 'Finishing the operation.....' && sleep 5s"
 alias virtualnet="sudo virsh net-start default && echo 'Finishing the operation.....' && sleep 5s"
-alias wasd="clear && echo '---------- UPDATE --------------------------------' && sudo apt update && echo '---------- UPGRADE -------------------------------' && sudo apt upgrade -y && echo '---------- AUTOREMOVE ----------------------------' && sudo apt autoremove -y && echo '---------- REBOOTING -----------------------------' && echo 'Rebooting the system.....' && sleep 5s && systemctl reboot"
+alias wasd="clear && echo '---------- UPDATE --------------------------------------------' && sudo apt update && echo '---------- UPGRADE -------------------------------------------' && sudo apt upgrade -y && echo '---------- AUTOREMOVE ----------------------------------------' && sudo apt autoremove -y && echo '---------- REBOOTING -----------------------------------------' && echo 'Rebooting the system.....' && sleep 5s && systemctl reboot"
 alias ttyreconfigure="sudo dpkg-reconfigure console-setup"
 
 # Functions
