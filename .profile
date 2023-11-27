@@ -23,6 +23,3 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
 fi
 powers
 
-# Start X-SERVERS
-startx
-
