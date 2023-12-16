@@ -23,3 +23,10 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
 fi
 powers
 
+<<powerx
+# Start X-SERVERS
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+  exec startx
+fi
+powerx
+
