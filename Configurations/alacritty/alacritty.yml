@@ -1,0 +1,97 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+# See https://alacritty.org/ for all configuration options.
+
+env:
+  TERM: xterm-256color
+
+shell:
+  program: pwsh
+
+window:
+  title: Alacritty
+  opacity: 0.9
+  dynamic_padding: false
+
+  padding:
+    x: 20
+    y: 20
+
+  class:
+    general: Alacritty
+    instance: Alacritty
+
+scrolling:
+  history: 2000
+
+font:
+  normal:
+    family: ComicCode Nerd Font
+    style: Regular
+
+  bold:
+    family: ComicCode Nerd Font
+    style: Bold
+
+  italic:
+    family: ComicCode Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: ComicCode Nerd Font
+    style: Bold Italic
+
+  size: 12.0
+  #size: 20.0
+
+  offset:
+    x: 0
+    y: 1
+
+#######################################
+##       The Night Owl Colors        ##
+#######################################
+colors:
+  primary:
+    background: "#011627"
+    foreground: "#d6deeb"
+  cursor:
+    text: "#011627"
+    cursor: "#d6deeb"
+  selection:
+    background: "#1b90dd"
+  normal:
+    black:   "#011627"
+    red:     "#ef5350"
+    green:   "#22da6e"
+    yellow:  "#c5e478"
+    blue:    "#82aaff"
+    magenta: "#c792ea"
+    cyan:    "#21c7a8"
+    white:   "#ffffff"
+  bright:
+    black:   "#575656"
+    red:     "#ef5350"
+    green:   "#22da6e"
+    yellow:  "#ffeb95"
+    blue:    "#82aaff"
+    magenta: "#c792ea"
+    cyan:    "#7fdbca"
+    white:   "#ffffff"
+  draw_bold_text_with_bright_colors: true
+
+keyboard:
+  bindings:
+    - { key: C,         mods: Control|Shift, action: Copy                        }
+    - { key: V,         mods: Control|Shift, action: Paste                       }
+    - { key: Copy,      mods: None,          action: Copy                        }
+    - { key: Paste,     mods: None,          action: Paste                       }
+    - { key: Insert,    mods: Shift,         action: PasteSelection              }
+    - { key: Key0,      mods: Control,       action: ResetFontSize               }
+    - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
+    - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+    - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+    - { key: F11,       mods: None,          action: ToggleFullscreen            }
+    - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
+    - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
+    - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+    - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
