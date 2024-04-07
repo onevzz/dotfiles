@@ -14,9 +14,7 @@ shopt -s checkwinsize
 # Aliases
 alias v="vim"
 alias c="cls"
-alias f="cls"
 alias cc="cld"
-alias ff="cld"
 alias ..="cd .."
 alias mv="mv -vi"
 alias rm="rm -vi"
@@ -48,8 +46,6 @@ cls() {
     fi;
 }
 cld() { cd "$@" && cls; }
-git0() { git reset --hard && git clean -fdx && clear && git status && ls; }
-gitt() { git add -A && git commit -m "$@"; }
-gitc() { git commit -m "$@"; }
-gitx() { git commit; }
+g0() { git reset --hard && git clean -fdx && clear && git status && ls; }
+gg() { git add -A && git commit -m "$@"; }
 
